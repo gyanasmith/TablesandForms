@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Forms</title>
+    <link rel="stylesheet" href="TablesForms.css">
+</head>
+<body>
+    <header><h1>The Solar System</h1></header>
+    <nav>
+        <ul>
+            <li><a href="#PlanetInfo">Learn About Planets</a></li>
+            <li><a href="#PlanetQuiz">Take a Planet Quiz</a></li>
+            <li><a href="#PlanetDistance">Distance and Size</a></li>
+        </ul>
+    </nav>
+    </body>
+    <main>
+    <section id="PlanetInfo">
+        <br><br><br><br>
+        <h1>Learn About the Planets!</h1>
+        <p>Click on any of the planets to learn more!</p>
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/07/pia06890-our-solar-system-banner-1920x640-1.jpg?w=1920" usemap="#image-map" alt="Solar System Map" width="68%">
+        <map name="image-map">
+            <area shape="circle" coords="0,120, 140" href="https://science.nasa.gov/sun/" alt="Sun Site" target="_blank">
+            <area shape="circle" coords="130, 240, 20" href="https://science.nasa.gov/mercury/" alt="Mercury Site" target="_blank">
+            <area shape="circle" coords="180, 210, 16" href="https://science.nasa.gov/venus/" alt="Venus Site" target="_blank">
+            <area shape="circle" coords="234, 180, 16" href="https://science.nasa.gov/earth/" alt="Earth Site" target="_blank">
+            <area shape="circle" coords="274, 142, 16" href="https://science.nasa.gov/mars/" alt="Mars Site" target="_blank">
+            <area shape="circle" coords="370, 160, 36" href="https://science.nasa.gov/jupiter/" alt="Jupiter Site" target="_blank">
+            <area shape="circle" coords="466, 110, 32" href="https://science.nasa.gov/saturn/" alt="Saturn Site" target="_blank">
+            <area shape="circle" coords="540, 70, 20" href="https://science.nasa.gov/uranus/" alt="Uranus Site" target="_blank">
+            <area shape="circle" coords="602, 36, 20" href="https://science.nasa.gov/neptune/" alt="Neptune Site" target="_blank">
+            <area shape="circle" coords="650, 6, 10" href="https://science.nasa.gov/dwarf-planets/pluto/" alt="Pluto Site" target="_blank">
+        </map>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <br><br><br>
+    <section id="PlanetQuiz">
+        <h1>Planet Quiz</h1>
+        <h3>Test your knowledge about the solar system!</h3>
+        <form id="quiz" action="#" method="POST">
+            <label for="name">Name: *</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required> <br><br>
+            
+            <label for="email">Email: *</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email:" required><br><br>
+
+            <label for="date">What is today's date?</label><br>
+            <input type="date" id="date" name="date"><br><br>
+      
+            <label for="earth">The Earth is the ___ planet from the Sun</label><br>
+            <select name="earth" id="earth" required>
+              <option value="1">8th</option>
+              <option value="2">3rd</option>
+              <option value="3">4th</option>
+              <option value="4">7th</option>
+            </select><br><br>
+      
+            <label for="SunPlanet">Is the sun a planet?</label><br>
+            <input type="radio" id="SunYes" name="SunPlanet" value="Yes">
+            <label for="SunYes">Yes</label><br>
+            <input type="radio" id="SunNo" name = SunPlanet value="No">
+            <label for="SunNo">No</label><br><br>
+
+            <label for="7thPlanet">What is the 7th planet from the sun?</label>
+            <select name="7thplanet" id="7thplanet">
+                <option value="Saturn">Saturn</option>
+                <option value="Mars">Mars</option>
+                <option value="Neptune">Neptune</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Venus">Venus</option>
+            </select><br><br>
+
+            <label for="text">How many planets are there?</label>
+            <input type="text" id="text" name="text"><br><br>
+
+            <label for="BiggestPlanet">What is the biggest planet?</label>
+            <select name="BiggestPlanet" id="BiggestPlannet">
+                <option value="Mars">Mars</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Neptune">Neptune</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Venus">Venus</option>
+            </select><br><br>
+
+            <label for="SmallestPlanet">What is the smallest planet?</label>
+            <select name="Smallest" id="Smallest">
+                <option value="Mars">Mars</option>
+                <option value="Earth">Earth</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Venus">Venus</option>
+                <option value="Mercury">Mercury</option>
+            </select><br><br>
+      
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to our Newsletter to get daily facts about the solar system!</label><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+          </form>
+      <br>
+    </section>
+    <br><br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <section id="PlanetDistance">
+        <h1>Planet Sizes and Distance From the Sun</h1>
+        <br>
+        <table>
+            <caption>Size and Distance (km)</caption>
+            <colgroup><col span="0" style="background-color: #deb6c9;"></colgroup>
+            <thead><tr>
+                <th>Planet</th>
+                <th>Diameter (km)</th>
+                <th>Distance (km)</th>
+            </tr></thead>
+            <tbody><tr>
+                <td>Sun</td>
+                <td>1,391,400</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>4,879</td>
+                <td>57,900,000</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>12,104</td>
+                <td>108,200,000</td>
+            </tr>
+            <tr>
+                <td>Earth</td>
+                <td>12,756</td>
+                <td>149,600,000</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>6,792</td>
+                <td>227,900,000</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>142,984</td>
+                <td>778,600,000</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>120,536</td>
+                <td>1,433,500,000</td>
+            </tr>
+            <tr>
+                <td>Uranus</td>
+                <td>51,118</td>
+                <td>2,872,500,000</td>
+            </tr>
+            <tr>
+                <td>Neptune</td>
+                <td>49,528</td>
+                <td>4,495,100,000</td>
+            </tr>
+            <tr>
+                <td>Pluto</td>
+                <td>2,377</td>
+                <td>5,906,380,000</td>
+            </tr>
+        </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Amazing!</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</main>
+<footer>
+    <div class="bottomnav">
+        <ul>
+            <li><a href="#PlanetInfo">Learn About Planets</a></li>
+            <li><a href="#PlanetQuiz">Take a Planet Quiz</a></li>
+            <li><a href="#PlanetDistance">Distance and Size</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    &copy; All Rights Reserved Gyana Smith</footer>
+</html>

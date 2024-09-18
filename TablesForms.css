@@ -1,0 +1,99 @@
+
+header {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+header, footer {
+    background-color: #deb6c9;
+    color: #5d070c;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+nav ul {
+    background-color: #deb6c99c;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height:50%;
+    position: fixed;
+    border-radius: 30px;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: #5d070c;
+}
+nav li{
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+nav li:hover {
+    text-decoration: underline;
+    border-radius: 30px;
+    background-color: #a28392a3;
+    width: 80%;
+}
+main {
+    float: center;
+    width: 75%;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    margin-bottom: 12.5rem;
+    margin-top: 5rem;
+    padding: 20px;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: -10px -10px 10px #deb6c99c;
+}
+.bottomnav ul{
+    list-style-type: none;
+}
+.bottomnav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #5d070c;
+    padding: 20px;
+}
+.bottomnav li:hover {
+    text-decoration: underline;
+    border-radius: 30px;
+    background-color: #a28392a3;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    color: #5d070c;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: solid #deb6c9;
+}
+th {
+    background-color: #deb6c9;
+}
+
+
+thead {
+    background-color: #deb6c9;
+}
+tfoot td{
+    background-color: #deb6c9;
+    text-align: center;
+}
+.clickable-image {
+    cursor: pointer;
+}
